@@ -50,7 +50,7 @@ def dfs(maze, position = None, first=True):
         neighbor = np.array(neighbor)
         if neighbor.tobytes() not in queue:
             queue[neighbor.tobytes()] = False
-        #print(queue)
+            #print(queue)
         dfs(maze, neighbor, False)
 
 queue = {}
